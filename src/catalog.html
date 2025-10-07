@@ -8,7 +8,7 @@
   <body>
     <main class="mx-auto grid gap-6 p-6 max-w-[1000px]">
       <section class="flow-root">
-        <div class="float-left">
+        <a href="index.html" class="float-left">
           <p
             class="text-md pr-4 font-semibold leading-4.5 uppercase text-black"
           >
@@ -16,14 +16,14 @@
             <br />художественных<br />выставок
           </p>
           <hr class="h-0.5 my-3 bg-black border-0" />
-        </div>
-        <div class="float-left">
+        </a>
+        <a href="index.html" class="float-left">
           <p class="text-md font-semibold leading-4.5 uppercase text-white">
             The collection of catalogs
             <br />artistic exhibitions<br />Russia-USSR XIX-XX century
           </p>
           <hr class="h-0.5 my-3 bg-white border-0" />
-        </div>
+        </a>
         <div
           class="py-1 px-3 text-sm border text-white border-white rounded-2xl float-right"
         >
@@ -31,17 +31,18 @@
         </div>
       </section>
       <section>
-        <form>
+        <form id="search-form">
           <div class="relative">
             <input
               type="search"
-              id="default-search"
+              id="search-text"
               class="block w-full py-2 pl-4 pr-10 text-md bg-white rounded-2xl placeholder:truncate focus:outline-none"
-              placeholder="Поиск выставок, художников, картин, мест проведения, дат и т.д."
+              placeholder="Поиск выставок, художников, картин, мест проведения"
               required
             />
             <button
               type="submit"
+              id="search-submit"
               class="absolute end-2.5 bottom-2.5 px-4 py-2.5"
             >
               <div
@@ -104,7 +105,7 @@
                 выставки М. К. Чюрлёниса (1875-1911; до 1955 использовалась
                 русская форма имени Николай К. Чурлянис)
               </p>
-              <hr class="h-[0.5px] bg-white/30 border-0" />
+              <hr class="h-0.5 bg-white/30 border-0" />
               <span
                 >Мир искусства: Выставка картин: Каталог. 2-е изд. СПб., 1912.
                 31, [1] с. 18,5 х 12,5. 20 к.</span
@@ -120,7 +121,7 @@
                 которого не было среди участников в первом издании), 386а.
                 Изменился список работ М. Чюрлёниса, а также их нумерация
               </p>
-              <hr class="h-[0.5px] bg-white/30 border-0" />
+              <hr class="h-0.5 bg-white/30 border-0" />
               <p>Третье издание идентично второму.</p>
             </div>
           </div>
@@ -456,5 +457,22 @@
         </div>
       </section>
     </main>
+
+    <script type="text/javascript">
+      document.addEventListener("DOMContentLoaded", function (event) {
+        document
+          .getElementById("search-submit")
+          .addEventListener("click", function () {
+            window.location.href = "search-result.html";
+          });
+
+        document
+          .getElementById("search-form")
+          .addEventListener("submit", function (event) {
+            event.preventDefault();
+            document.getElementById("search-submit").click();
+          });
+      });
+    </script>
   </body>
 </html>

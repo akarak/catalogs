@@ -14,27 +14,32 @@
             <br />художественных<br />выставок
           </p>
           <hr class="h-1 my-3 bg-black border-0" />
-          <p class="text-md font-semibold leading-4.5  text-left uppercase text-white">
+          <p
+            class="text-md font-semibold leading-4.5 text-left uppercase text-white"
+          >
             The collection of catalogs
             <br />artistic exhibitions<br />Russia-USSR XIX-XX century
           </p>
         </div>
-        <div class="py-1 px-3 text-sm border text-white border-white rounded-2xl self-start justify-self-end">
+        <div
+          class="py-1 px-3 text-sm border text-white border-white rounded-2xl self-start justify-self-end"
+        >
           Регистрация / Логин
         </div>
       </section>
       <section>
-        <form>
+        <form id="search-form">
           <div class="relative">
             <input
               type="search"
-              id="default-search"
+              id="search-text"
               class="block w-full py-2 pl-4 pr-10 text-md bg-white rounded-2xl placeholder:truncate focus:outline-none"
-              placeholder="Поиск выставок, художников, картин, мест проведения, дат и т.д."
+              placeholder="Поиск выставок, художников, картин, мест проведения"
               required
             />
             <button
               type="submit"
+              id="search-submit"
               class="absolute end-2.5 bottom-2.5 px-4 py-2.5"
             >
               <div
@@ -160,8 +165,32 @@
               alt="K227. Художественные произведения"
             />
           </a>
+          <a href="catalog.html?id=2025-10-07_165427" class="inline-block">
+            <img
+              class="h-auto max-w-full"
+              src="assets\covers\2025-10-07_165427.jpg"
+              alt=""
+            />
+          </a>
         </div>
       </section>
     </main>
+
+    <script type="text/javascript">
+      document.addEventListener("DOMContentLoaded", function (event) {
+        document
+          .getElementById("search-submit")
+          .addEventListener("click", function () {
+            window.location.href = "search-result.html";
+          });
+
+        document
+          .getElementById("search-form")
+          .addEventListener("submit", function (event) {
+            event.preventDefault();
+            document.getElementById("search-submit").click();
+          });
+      });
+    </script>
   </body>
 </html>
