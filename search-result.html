@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+  </head>
+  <body>
+    <main class="mx-auto grid gap-6 p-6 max-w-[1000px]">
+      <section class="flow-root">
+        <a href="index.html" class="float-left">
+          <p
+            class="text-md pr-4 font-semibold leading-4.5 uppercase text-black"
+          >
+            Сборник каталогов
+            <br />художественных<br />выставок
+          </p>
+          <hr class="h-0.5 my-3 bg-black border-0" />
+        </a>
+        <a href="index.html" class="float-left">
+          <p class="text-md font-semibold leading-4.5 uppercase text-white">
+            The collection of catalogs
+            <br />artistic exhibitions<br />Russia-USSR XIX-XX century
+          </p>
+          <hr class="h-0.5 my-3 bg-white border-0" />
+        </a>
+        <div
+          class="py-1 px-3 text-sm border text-white border-white rounded-2xl float-right"
+        >
+          Регистрация / Логин
+        </div>
+      </section>
+      <section>
+        <form id="search-form">
+          <div class="relative">
+            <input
+              type="search"
+              id="search-text"
+              class="block w-full py-2 pl-4 pr-10 text-md bg-white rounded-2xl placeholder:truncate focus:outline-none"
+              placeholder="Поиск выставок, художников, картин, мест проведения"
+              required
+            />
+            <button
+              type="submit"
+              id="search-submit"
+              class="absolute end-2.5 bottom-2.5 px-4 py-2.5"
+            >
+              <div
+                class="absolute inset-y-0 start-0 flex items-center ps-2 pointer-events-none"
+              >
+                <svg
+                  class="w-5 h-5 text-gray-500"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"
+                  />
+                </svg>
+              </div>
+            </button>
+          </div>
+        </form>
+      </section>
+
+      <section class="flex flex-col text-white font-cambria">
+        <span class="text-3xl">Серов:</span>
+
+        <div class="flex flex-col">
+          <hr class="h-0.5 my-6 bg-white/30 border-0" />
+          <div class="flex gap-6">
+            <a href="catalog.html">
+              <img
+                class="h-64 object-scale-down"
+                src="assets\covers\B438.jpg"
+                alt="B438. Товарищество Художников"
+            /></a>
+            <div class="flex flex-col gap-2">
+              <span>125</span>
+              <a href="catalog.html" class="text-2xl"
+                >XVIII выставка Московского товарищества художников</a
+              >
+              <hr class="h-0.5 bg-white border-0" />
+              <ul class="list-none">
+                <li>
+                  <a href="artifact.html?id=1234567890"
+                    ><span class="pr-2">131.</span>
+                    <span class="px-1 text-black bg-white">Серов</span> В. А.
+                    Портрет. Ф. И. Шаляпина</a
+                  >
+                </li>
+                <li>
+                  <a href="artifact.html?id=1234567890"
+                    ><span class="pr-2">294.</span>
+                    <span class="px-1 text-black bg-white">Серов</span> В. А.
+                    Девочка с персиками</a
+                  >
+                </li>
+                <li>
+                  <a href="artifact.html?id=1234567890"
+                    ><span class="pr-2">295.</span>
+                    <span class="px-1 text-black bg-white">Серов</span> В. А.
+                    Боря Шаляпин</a
+                  >
+                </li>
+                <li>
+                  <a href="artifact.html?id=1234567890"
+                    ><span class="pr-2">296.</span>
+                    <span class="px-1 text-black bg-white">Серов</span> В. А.
+                    Портрет. Ф. И. Шаляпина</a
+                  >
+                </li>
+                <li>
+                  <a href="artifact.html?id=1234567890"
+                    ><span class="pr-2">297.</span>
+                    <span class="px-1 text-black bg-white">Серов</span> В. А.
+                    Портрет Е. Н. Чоколовой</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-col">
+          <hr class="h-0.5 my-6 bg-white/30 border-0" />
+          <div class="flex gap-6">
+            <a href="catalog.html">
+              <img
+                class="h-64 object-scale-down"
+                src="assets\covers\K126.jpg"
+                alt="K126. Мир искусства"
+            /></a>
+            <div class="flex flex-col gap-2">
+              <span>128</span>
+              <a href="catalog.html" class="text-2xl"
+                >Мир искусства: Выставка картин</a
+              >
+              <hr class="h-0.5 bg-white border-0" />
+              <ul class="list-none">
+                <li>
+                  <a href="artifact.html?id=1234567890"
+                    ><span class="pr-2">297.</span>
+                    <span class="px-1 text-black bg-white">Серов</span> В. А.
+                    Портрет Е. Н. Чоколовой</a
+                  >
+                </li>
+                <li>
+                  <a href="artifact.html?id=1234567890"
+                    ><span class="pr-2">298.</span>
+                    <span class="px-1 text-black bg-white">Серов</span> В. А.
+                    Портреь С. П. Чоколова</a
+                  >
+                </li>
+                <li>
+                  <a href="artifact.html?id=1234567890"
+                    ><span class="pr-2">299.</span>
+                    <span class="px-1 text-black bg-white">Серов</span> В. А.
+                    Норвежское море</a
+                  >
+                </li>
+                <li>
+                  <a href="artifact.html?id=1234567890"
+                    ><span class="pr-2">300.</span>
+                    <span class="px-1 text-black bg-white">Серов</span> В. А.
+                    Рыбная пристань</a
+                  >
+                </li>
+                <li>
+                  <a href="artifact.html?id=1234567890"
+                    ><span class="pr-2">301.</span>
+                    <span class="px-1 text-black bg-white">Серов</span> В. А.
+                    Пейзаж</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-col">
+          <hr class="h-0.5 my-6 bg-white/30 border-0" />
+          <div class="flex gap-6">
+            <a href="catalog.html">
+              <img
+                class="h-64 object-scale-down"
+                src="assets\covers\B22.jpg"
+                alt="B22. IV Выставка картин"
+            /></a>
+            <div class="flex flex-col gap-2">
+              <span>238</span>
+              <a href="catalog.html" class="text-2xl"
+                >Выставка Общества художников «Московский салон»</a
+              >
+              <hr class="h-0.5 bg-white border-0" />
+              <ul class="list-none">
+                <li>
+                  <a href="artifact.html?id=1234567890"
+                    ><span class="pr-2">16.</span>
+                    <span class="px-1 text-black bg-white">Серов</span> В. А.
+                    Портрет Е. Н. Чоколовой</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script type="text/javascript">
+      document.addEventListener("DOMContentLoaded", function (event) {
+        document.getElementById("search-text").value = "Серов";
+      });
+
+      document.addEventListener("DOMContentLoaded", function (event) {
+        document
+          .getElementById("search-submit")
+          .addEventListener("click", function () {
+            window.location.href = "search-result.html";
+          });
+
+        document
+          .getElementById("search-form")
+          .addEventListener("submit", function (event) {
+            event.preventDefault();
+            document.getElementById("search-submit").click();
+          });
+      });
+    </script>
+  </body>
+</html>

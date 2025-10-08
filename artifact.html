@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+  </head>
+  <body>
+    <main class="mx-auto grid gap-6 p-6 max-w-[1000px]">
+      <section class="flow-root">
+        <a href="index.html" class="float-left">
+          <p
+            class="text-md pr-4 font-semibold leading-4.5 uppercase text-black"
+          >
+            Сборник каталогов
+            <br />художественных<br />выставок
+          </p>
+          <hr class="h-0.5 my-3 bg-black border-0" />
+        </a>
+        <a href="index.html" class="float-left">
+          <p class="text-md font-semibold leading-4.5 uppercase text-white">
+            The collection of catalogs
+            <br />artistic exhibitions<br />Russia-USSR XIX-XX century
+          </p>
+          <hr class="h-0.5 my-3 bg-white border-0" />
+        </a>
+        <div
+          class="py-1 px-3 text-sm border text-white border-white rounded-2xl float-right"
+        >
+          Регистрация / Логин
+        </div>
+      </section>
+      <section>
+        <form id="search-form">
+          <div class="relative">
+            <input
+              type="search"
+              id="search-text"
+              class="block w-full py-2 pl-4 pr-10 text-md bg-white rounded-2xl placeholder:truncate focus:outline-none"
+              placeholder="Поиск выставок, художников, картин, мест проведения"
+              required
+            />
+            <button
+              type="submit"
+              id="search-submit"
+              class="absolute end-2.5 bottom-2.5 px-4 py-2.5"
+            >
+              <div
+                class="absolute inset-y-0 start-0 flex items-center ps-2 pointer-events-none"
+              >
+                <svg
+                  class="w-5 h-5 text-gray-500"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"
+                  />
+                </svg>
+              </div>
+            </button>
+          </div>
+        </form>
+      </section>
+
+      <section class="flex flex-col text-white font-cambria">
+        <div class="flex gap-6">
+          <img
+            class="h-64 object-scale-down"
+            src="assets/pics/2025-10-07_000827.jpg"
+            alt=""
+          />
+          <div class="flex flex-col">
+            <span class="text-2xl">Девочка с персиками</span>
+            <span class="text-lg">Валентин Серов</span>
+            <span class="pt-6">91 × 85 см</span>
+            <span>Холст, масло.</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="flex flex-col text-white font-cambria">
+        <span class="text-2xl">В каталогах:</span>
+        <hr class="h-0.5 my-6 bg-white/30 border-0" />
+
+        <div class="flex gap-4">
+          <div class="self-start w-4/10">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <img
+                class="h-auto max-w-full"
+                src="assets\covers\K1859.jpg"
+                alt="K1859. Осенняя выставка картин"
+              />
+              <img
+                class="h-auto max-w-full"
+                src="assets\covers\K1859.jpg"
+                alt="K1859. Осенняя выставка картин"
+              />
+              <img
+                class="h-auto max-w-full"
+                src="assets\covers\K1859.jpg"
+                alt="K1859. Осенняя выставка картин"
+              />
+            </div>
+          </div>
+          <div class="w-6/10">
+            <div class="flex flex-col gap-3">
+              <span>125</span>
+              <span class="text-2xl">Мир искусства: Выставка картин</span>
+              <span
+                >Мир искусства: Выставка картин: Каталог. СПб., 1912. 30, [2] с.
+                18,5 х 12,5. 20 к</span
+              >
+              <span class="italic">Издательская иллюстрированная обложка.</span>
+              <p>
+                Проходила в январе в Петербурге, на Невском проспекте, 45.
+                Участвовало 56 художников. Экспонировано 451 произведение.
+                Впервые приняли участие Н. Калмаков и М. Шагал. Ретроспектива
+                выставки М. К. Чюрлёниса (1875-1911; до 1955 использовалась
+                русская форма имени Николай К. Чурлянис)
+              </p>
+              <hr class="h-0.5 bg-white/30 border-0" />
+              <span
+                >Мир искусства: Выставка картин: Каталог. 2-е изд. СПб., 1912.
+                31, [1] с. 18,5 х 12,5. 20 к.</span
+              >
+              <span class="italic"
+                >Издательская иллюстрированная обложка с серебряным
+                тиснением.</span
+              >
+              <p>
+                Вышло три издания каталога. Во втором издании каталога изъяты №
+                16-18, 58, 61-65, 213-216, 246, 255-259, 263, 282, 284-285, 292,
+                332. Добавлены № 168а, 224а, 260а, 302а, 329а, 338а (М. Шагал,
+                которого не было среди участников в первом издании), 386а.
+                Изменился список работ М. Чюрлёниса, а также их нумерация
+              </p>
+              <hr class="h-0.5 bg-white/30 border-0" />
+              <p>Третье издание идентично второму.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script type="text/javascript">
+      document.addEventListener("DOMContentLoaded", function (event) {
+        document
+          .getElementById("search-submit")
+          .addEventListener("click", function () {
+            window.location.href = "search-result.html";
+          });
+
+        document
+          .getElementById("search-form")
+          .addEventListener("submit", function (event) {
+            event.preventDefault();
+            document.getElementById("search-submit").click();
+          });
+      });
+    </script>
+  </body>
+</html>
